@@ -48,7 +48,14 @@ const updateValues = () => {
   }, 250);
 };
 
-amountSlider.addEventListener("input", updateValues);
-tenorSlider.addEventListener("input", updateValues);
+if (amountSlider && tenorSlider && amountValue && tenorValue && installmentValue) {
+  amountSlider.addEventListener("input", updateValues);
+  tenorSlider.addEventListener("input", updateValues);
+  updateValues();
+}
 
-updateValues();
+if (ctaButton) {
+  ctaButton.addEventListener("click", () => {
+    window.location.href = "apply-ktpdata.html";
+  });
+}
