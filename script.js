@@ -3,7 +3,6 @@ const tenorSlider = document.getElementById("tenorSlider");
 const amountValue = document.getElementById("amountValue");
 const tenorValue = document.getElementById("tenorValue");
 const installmentValue = document.getElementById("installmentValue");
-const ctaButton = document.getElementById("ctaButton");
 
 const formatRupiah = (value) =>
   new Intl.NumberFormat("id-ID", {
@@ -37,8 +36,6 @@ const updateValues = () => {
   updateSliderBackground(amountSlider);
   updateSliderBackground(tenorSlider);
 
-  ctaButton.disabled = Number.isNaN(amount) || Number.isNaN(tenor);
-
   installmentValue.classList.add("loading");
   installmentValue.textContent = "Rp";
   setTimeout(() => {
@@ -52,10 +49,4 @@ if (amountSlider && tenorSlider && amountValue && tenorValue && installmentValue
   amountSlider.addEventListener("input", updateValues);
   tenorSlider.addEventListener("input", updateValues);
   updateValues();
-}
-
-if (ctaButton) {
-  ctaButton.addEventListener("click", () => {
-    window.location.href = "apply-ktpdata.html";
-  });
 }
