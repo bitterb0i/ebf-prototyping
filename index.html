@@ -1,109 +1,47 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amar Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <title>Amar Bank</title>
   </head>
   <body>
-    <main class="app">
-      <div class="screen">
-        <header class="app-header">
-          <span class="back-icon" aria-hidden="true">←</span>
-          <h1>Amar Bank</h1>
+    <div class="screen">
+      <main class="app">
+        <header class="topbar">
+          <div class="topbar__inner">
+            <div class="topbar__left">
+              <button class="topbar__back" type="button" aria-label="Back">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M19 12H5M12 19L5 12L12 5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <span class="topbar__title">Amar Bank</span>
+            </div>
+          </div>
         </header>
-
-        <section class="loan-simulation" aria-label="Simulasi Pinjaman">
-          <div class="promo-banner">
-            <p class="promo-tag">#PinjamanDiTunaiku</p>
-            <p class="promo-title">Pinjaman yang Aman dan Nyaman</p>
-          </div>
-
-          <div class="loan-section">
-            <div class="loan-header">
-              <span>Jumlah Pinjaman</span>
-              <span class="loan-value">15 Juta</span>
-            </div>
-            <input type="range" min="2" max="30" value="15" />
-            <div class="range-labels">
-              <span>2</span>
-              <span>30</span>
-            </div>
-          </div>
-
-          <div class="loan-section">
-            <div class="loan-header">
-              <span>Periode Pinjaman</span>
-              <span class="loan-value">12 Bulan</span>
-            </div>
-            <input type="range" min="6" max="30" value="12" />
-            <div class="range-labels">
-              <span>6</span>
-              <span>30</span>
-            </div>
-          </div>
-
-          <div class="monthly-installment">
-            <span class="installment-label">Cicilan per bulan</span>
-            <span class="installment-value">Rp1.620.535</span>
-          </div>
-
-          <button class="cta-button" type="button">Ajukan Pinjaman</button>
-
-          <div class="partner-logos">
-            <span class="logo-text">tunaiku</span>
-            <span class="logo-text">amar bank</span>
-          </div>
-        </section>
-
-        <section class="balance-card">
-          <span class="balance-title">amar bank</span>
-          <span class="balance-amount">Rp 0</span>
-        </section>
-
-        <section class="quick-actions" aria-label="Aksi Cepat">
-          <span class="action-item">Top Up</span>
-          <span class="action-item">Transfer</span>
-          <span class="action-item">Lainnya</span>
-        </section>
-
-        <section class="other-features">
-          <h2>Fitur Lainnya dari Amar Bank</h2>
-          <div class="deposito-card">
-            <div class="deposito-header">
-              <span class="deposito-title">Deposito</span>
-
-              <img
-                src="/asset/icon/ic-arrow-circle.svg"
-                alt="arrow"
-                class="deposito-arrow"
-              />
-            </div>
-
-            <p class="deposito-desc">
-              Nabung untung mulai dari 1 bulan bunga sampai
-              <span class="deposito-highlight">9% p.a.</span>
-            </p>
-
-            <button class="deposito-cta">
-              Lihat Deposito
-            </button>
-          </div>
-          <div class="feature-grid">
-            <article class="feature-card feature-green">
-              <h3>Deposito</h3>
-              <p>Nabung untung mulai dari 1 bulan bunga sampai 9% p.a.</p>
-              <button type="button" class="feature-button">Lihat Deposito</button>
-            </article>
-            <article class="feature-card feature-purple">
-              <h3>Celengan</h3>
-              <p>Nabung fleksibel hingga 5.5% p.a. cair tiap hari. Tarik kapanpun!</p>
-              <button type="button" class="feature-button">Lihat Celengan</button>
-            </article>
-          </div>
-        </section>
-      </div>
-    </main>
+        <section class="content" aria-label="Content"></section>
+      </main>
+    </div>
   </body>
 </html>
