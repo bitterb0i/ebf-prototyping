@@ -106,7 +106,7 @@ body {
   max-width: 480px;
   margin: 0 auto;
   min-height: 100vh;
-  background: var(--inside-bg);
+  background: #FFFFFF;
 }
 
 main.app {
@@ -166,4 +166,142 @@ main.app {
 .content {
   flex: 1 1 auto;
   padding: 16px;
+}
+
+.widget-card {
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  background: #D7E8FF;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.widget-card .active-balance {
+  width: 100%;
+  height: auto;
+  padding: 12px 12px;
+  border-radius: 12px;
+  outline: 1px solid rgba(0, 0, 0, 0.10);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.widget-card .active-balance__logo {
+  width: 87.47px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget-card .active-balance__logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.widget-card .active-balance__amount {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
+}
+
+.active-balance__currency {
+  width: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #25262B;
+  font-family: Mulish, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.active-balance__value {
+  color: #25262B;
+  font-family: Mulish, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.widget-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.widget-menu .menu-item {
+  flex: 1;
+}
+
+.menu-item {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-label {
+  text-align: center;
+  color: #1253A5;
+  font-size: 11px;
+  font-family: Mulish, sans-serif;
+  font-weight: 600;
+  line-height: 14px;
+  word-wrap: break-word;
+}
+
+.menu-icon {
+  width: 44px;
+  height: 44px;
+  position: relative;
+  border-radius: 16px;
+  background: #1253A5;
+  overflow: hidden;
+}
+
+.menu-icon::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.menu-icon--topup::before {
+  -webkit-mask-image: url("asset/icon/ic-plus.svg");
+  mask-image: url("asset/icon/ic-plus.svg");
+}
+
+.menu-icon--transfer::before {
+  -webkit-mask-image: url("asset/icon/ic-transfer.svg");
+  mask-image: url("asset/icon/ic-transfer.svg");
+}
+
+.menu-icon--other::before {
+  -webkit-mask-image: url("asset/icon/ic-other.svg");
+  mask-image: url("asset/icon/ic-other.svg");
 }
