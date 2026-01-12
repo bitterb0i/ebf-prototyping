@@ -97,7 +97,7 @@ body {
 
   --outside-bg: #F5F5F5;
   --inside-bg: #FFFFFF;
-  --topbar-bg: #0054B8;
+  --topbar-bg: var(--03--general---solid---ocean--blue--ocean-blue-500);
   --text-on-primary: #FFFFFF;
 }
 
@@ -145,6 +145,12 @@ main.app {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.topbar__back img {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 .topbar__title {
