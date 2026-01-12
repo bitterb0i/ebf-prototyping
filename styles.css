@@ -229,3 +229,77 @@ body {
 .feature-purple {
   background: #F3E5F5;
 }
+
+/* ===== Deposito Card ===== */
+.deposito-card {
+  position: relative;
+  width: 100%;
+  max-width: 328px;
+  height: 240px;
+  padding: 12px;
+  background-color: #F1F9EF;
+  background-image: url('/asset/img/il_depo.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 140px auto;
+  border-radius: 12px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.10);
+  overflow: hidden;
+}
+
+/* Header */
+.deposito-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Deposito title */
+.deposito-title {
+  color: #2F5127;
+  font-size: 14px;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+}
+
+/* Arrow icon */
+.deposito-arrow {
+  width: 20px;
+  height: 20px;
+  filter: invert(23%) sepia(16%) saturate(1300%) hue-rotate(70deg);
+}
+
+/* Description */
+.deposito-desc {
+  margin-top: 8px;
+  max-width: 200px;
+  color: #25262B;
+  font-size: 14px;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+/* Highlight text */
+.deposito-highlight {
+  color: #2F5127;
+  font-weight: 800;
+}
+
+/* CTA Button */
+.deposito-cta {
+  margin-top: 12px;
+  padding: 4px 12px;
+  background: #2F5127;
+  border-radius: 100px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  cursor: pointer;
+}
