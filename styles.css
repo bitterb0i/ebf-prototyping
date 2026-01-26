@@ -97,6 +97,7 @@ body {
 
   --outside-bg: #F5F5F5;
   --inside-bg: #FFFFFF;
+  --topbar-bg: #0054B8;
   --topbar-bg: var(--03--general---solid---ocean--blue--ocean-blue-500);
   --text-on-primary: #FFFFFF;
 }
@@ -114,6 +115,12 @@ main.app {
   flex-direction: column;
   min-height: 100vh;
   background: var(--inside-bg);
+}
+
+.topbar {
+  background: var(--topbar-bg);
+}
+
 }
 
 .topbar {
